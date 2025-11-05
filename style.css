@@ -107,6 +107,8 @@ p {
 
 .two {
   width: 100vw;
+  height: auto;
+  margin-bottom: 250px;
 }
 
 .project_container {
@@ -143,8 +145,53 @@ p {
 .project6 {
   justify-self: right;
 }
+
 .title_wrapper {
   display: flex;
   justify-content: space-between;
   padding: 1em;
+}
+
+.three {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: blue;
+  /* border: 1px solid; */
+}
+
+.contacts_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-content: space-evenly;
+  padding: 2em;
+  color: beige;
+}
+
+.contact_data {
+  padding: 0;
+  background-color: blue;
+  margin-block: 0.5em;
+}
+
+.last_img {
+  transform: scale(70%);
+}
+
+.credits {
+  width: 100vw;
+  height: auto;
+  color: beige;
+}
+
+.credits h1 {
+  padding-left: 2em;
+}
+
+.credits_text{
+background-color: blue;
+padding-left: 2em;
 }

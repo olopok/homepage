@@ -5,23 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
-    /> -->
   </head>
   <body>
-    <header>
+    <header style="filter: brightness(70%);">
       <nav>
-        <a href="#">ABOUT</a>
-        <a href="#">PROJECTS</a>
-        <a href="#">CONTACTS</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#contact">CONTACTS</a>
+        <a href="#credits">CREDITS</a>
       </nav>
     </header>
     <main>
-      <section class="one"></section>
-      <div class="container1">
+      <section class="one" style="filter: brightness(70%);" id="about"></section>
+      <div class="container1" >
         <div class="img_container">
           <h1 class="image1">Ashely Williams</h1>
         </div>
@@ -57,9 +53,9 @@
           </div>
         </div>
       </div>
-      <section class="two">
+      <section class="two" id="projects">
         <div class="project_container">
-          <h1 class="title title2">My Projects</h1>
+          <h1 class="title title2" >My Projects</h1>
           <div class="project project1">
             <img
               style="filter: brightness(70%)"
@@ -182,6 +178,31 @@
           </div>
         </div>
       </section>
+      <section class="three" style="filter: brightness(70%);" id="contact">
+        <div class="contacts_container">
+          <h1 class="title contact_data" >Contact Me</h1>
+          <p class="contact_data">Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+          <address class="contact_data">
+            <p class="contact_data">
+              Somewhere in to the earth<br />
+              1, that house.
+            </p>
+          </address>
+          <p class="contact_data"><a href="tel:+1234567890">Phone: +123 4567890</a></p>
+          <p class="contact_data">
+            <a href="mailto:intothemoon@fantasy.com"
+              >Email: intothemoon@fantasy.com</a
+            >
+          </p>
+        </div>
+        <img class="last_img" src="./image/image600.png" alt="Ashely Williams">
+      </section>
     </main>
+    <footer class="credits" style="filter: brightness(70%);" id="credits">
+      <h1 class="credits_text">Credits</h1>
+      <p class="credits_text">Photos by <a href="https://www.pexels.com/@krivitskiy/">Krivitskiy</a> by <a href="https://www.pexels.com">pexels.com</a></p>
+      <p class="credits_text">Projects image placeholder by <a href="https://placehold.co/">placehold.co</a></p>
+      <p class="credits_text">Icons from <a href="https://devicon.dev/">devicon.dev</a></p>
+    </footer>
   </body>
 </html>
