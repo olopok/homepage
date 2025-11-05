@@ -5,8 +5,11 @@
   margin: 0;
 }
 
-html {
+
+body {
+  max-width: 1600px;
   overflow-x: hidden;
+  margin: 0 auto;
 }
 
 header {
@@ -15,10 +18,11 @@ header {
   align-items: top;
   position: sticky;
   top: 0;
-  width: 100vw;
+  max-width: 1600px;
   background-color: blue;
   z-index: 1;
 }
+
 
 nav {
   display: flex;
@@ -36,7 +40,7 @@ a {
 }
 
 .one {
-  width: 100vw;
+  max-width: 1600px;
   height: 60vh;
   background-color: blue;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15vw), 0 100%);
@@ -44,14 +48,15 @@ a {
 }
 
 .container1 {
+  max-width: 1600px;
   display: flex;
-  width: 96%;
+  /* width: 96%; */
   height: auto;
   /* border: 1px solid black; */
   margin: 0 auto;
   margin-bottom: 3em;
-  position: absolute;
-  top: 100px;
+  position: relative;
+  top: -330px;
   left: 30px;
 }
 
@@ -76,7 +81,7 @@ a {
 
 .text_container {
   height: fit-content;
-  width: calc(100% - 500px);
+  max-width: 800px;
   align-self: center;
   margin-left: 6px;
   /* border: 1px solid grey; */
@@ -87,6 +92,11 @@ a {
 p {
   background-color: white;
   padding-left: 1em;
+  padding-right: 1em;
+}
+
+.aboutme_text {
+  max-width: 950px;
 }
 
 p {
@@ -106,9 +116,9 @@ p {
 }
 
 .two {
-  width: 100vw;
-  height: auto;
-  margin-bottom: 250px;
+  max-width: 1600px;
+  /* height: auto; */
+  /* margin-bottom: 250px; */
 }
 
 .project_container {
@@ -120,7 +130,7 @@ p {
   column-gap: 1.75em;
   justify-items: left;
   position: relative;
-  top: 200px;
+  top: -330px;
   left: 30px;
   /* border: 1px solid; */
 }
@@ -153,12 +163,14 @@ p {
 }
 
 .three {
-  width: 100vw;
+  max-width: 1600px;
   height: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: blue;
+  position: relative;
+  top: -280px;
   /* border: 1px solid; */
 }
 
@@ -182,16 +194,21 @@ p {
 }
 
 .credits {
-  width: 100vw;
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1600px;
   color: beige;
+  position: relative;
+  top: -280px;
+  background-color: blue;
 }
 
 .credits h1 {
   padding-left: 2em;
 }
 
-.credits_text{
-background-color: blue;
-padding-left: 2em;
+.credits_text {
+  background-color: blue;
+  padding-left: 2em;
 }
