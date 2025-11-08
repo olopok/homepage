@@ -5,24 +5,24 @@
   margin: 0;
 }
 
-
-body {
-  max-width: 1600px;
-  overflow-x: hidden;
-  margin: 0 auto;
+html {
+  background-color: white;
+  filter: brightness(70%);
 }
 
 header {
+  width: 100%;
+  height: auto;
+  background-color: blue;
   display: flex;
-  justify-content: center;
-  align-items: top;
-  position: sticky;
+  flex-direction: column;
+  align-items: center;
   top: 0;
   max-width: 1600px;
   background-color: blue;
+  position: sticky;
   z-index: 1;
 }
-
 
 nav {
   display: flex;
@@ -39,75 +39,74 @@ a {
   color: beige;
 }
 
-.one {
-  max-width: 1600px;
-  height: 60vh;
-  background-color: blue;
-  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 15vw), 0 100%);
-  color: beige;
+.about {
+  margin-bottom: 4em;
 }
-
-.container1 {
-  max-width: 1600px;
-  display: flex;
-  /* width: 96%; */
+.hero_container {
+  width: 100%;
   height: auto;
-  /* border: 1px solid black; */
-  margin: 0 auto;
-  margin-bottom: 3em;
-  position: relative;
-  top: -330px;
-  left: 30px;
-}
-
-.img_container {
+  background-image: linear-gradient(
+    -190deg,
+    Blue,
+    Blue 60%,
+    white 60.3%,
+    white 100%
+  );
   display: flex;
-  width: 500px;
-  height: 500px;
-  background-image: url(./image/image600.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   justify-content: center;
-  align-items: end;
-  /* border: 1px solid grey; */
-  box-shadow: 5px 5px 5px grey;
-  color: beige;
+  padding-top: 2em;
 }
 
-.image1 {
-  font-size: 4rm;
+.hero_img_wrapper {
+  width: fit-content;
+  height: auto;
+  position: relative;
+}
+
+.hero_img {
+  /* padding: 2em; */
+  box-shadow: 5px 5px 5px grey;
+}
+
+.hero_name {
+  color: beige;
+  position: absolute;
+  bottom: 35px;
+  left: 35px;
+  font-size: 1.3rem;
 }
 
 .text_container {
-  height: fit-content;
+  height: auto;
   max-width: 800px;
   align-self: center;
   margin-left: 6px;
-  /* border: 1px solid grey; */
   box-shadow: 5px 5px 5px grey;
 }
 
-.text_container h1,
-p {
+.title {
+  background-color: white;
+  padding: 1em;
+  padding-bottom: 0.3em;
+}
+
+.aboutme_text {
+  max-width: 950px;
   background-color: white;
   padding-left: 1em;
   padding-right: 1em;
 }
 
-.aboutme_text {
-  max-width: 950px;
-}
-
 p {
-  font-size: 20px;
+  font-size: 1rem;
   line-height: 30px;
   word-spacing: 5px;
 }
 
 .icons_container {
   justify-self: right;
-  padding: 2em;
+  padding-top: 1em;
+  padding-right: 1em;
 }
 
 .icon {
@@ -115,10 +114,9 @@ p {
   height: 30px;
 }
 
-.two {
+.projects {
   max-width: 1600px;
-  /* height: auto; */
-  /* margin-bottom: 250px; */
+  margin-top: 2em;
 }
 
 .project_container {
@@ -128,50 +126,40 @@ p {
   grid-template-rows: repeat(3, auto);
   row-gap: 2em;
   column-gap: 1.75em;
-  justify-items: left;
-  position: relative;
-  top: -330px;
-  left: 30px;
-  /* border: 1px solid; */
+  margin: 0 auto;
 }
 
 .project {
   display: flex;
   flex-direction: column;
-  padding-bottom: 4em;
+  padding-bottom: 1em;
+  border: 1px solid grey;
   box-shadow: 5px 5px 5px grey;
 }
 
 .title2 {
   grid-column: 1 / span 3;
+  padding: 0;
 }
 
-.project2,
-.project5 {
-  justify-self: center;
+.pro_des {
+  padding: 1em;
+  padding-bottom: 0;
 }
-
-.project3,
-.project6 {
-  justify-self: right;
-}
-
 .title_wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  align-items: center;
 }
 
-.three {
+.conctacts {
   max-width: 1600px;
   height: auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   background-color: blue;
-  position: relative;
-  top: -280px;
-  /* border: 1px solid; */
+  margin-top: 3.5em;
 }
 
 .contacts_container {
@@ -179,18 +167,17 @@ p {
   flex-direction: column;
   justify-content: left;
   align-content: space-evenly;
-  padding: 2em;
+  /* padding: 2em; */
   color: beige;
 }
 
 .contact_data {
-  padding: 0;
   background-color: blue;
-  margin-block: 0.5em;
+  /* margin-block: 0.5em; */
 }
 
 .last_img {
-  transform: scale(70%);
+  padding: 1.5em;
 }
 
 .credits {
@@ -199,8 +186,6 @@ p {
   align-items: center;
   max-width: 1600px;
   color: beige;
-  position: relative;
-  top: -280px;
   background-color: blue;
 }
 
