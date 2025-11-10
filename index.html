@@ -19,10 +19,17 @@
       <section class="about" id="about">
         <div class="hero_container">
           <div class="hero_img_wrapper">
-            <img src="./image/image1.svg" alt="" class="hero_img" />
-            <div class="hero_name">
-              <h1>Ashely Williams</h1>
-            </div>
+            <picture>
+              <source
+                media="(width < 800px)"
+                srcset="./image/image230x260.svg"
+              />
+              <source media="(width >= 800px)" srcset="./image/image1.svg" />
+              <img src="./image/image1.svg" alt="" class="hero_img" />
+              <div class="hero_name">
+                <h1>Ashely Williams</h1>
+              </div>
+            </picture>
           </div>
           <div class="text_container">
             <h1 class="title">About Me</h1>
@@ -112,7 +119,7 @@
                 />
               </a>
             </div>
-            <p>
+            <p class="pro_des">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
               natus.
             </p>
@@ -197,17 +204,23 @@
             >
           </p>
         </div>
-        <img class="last_img" src="./image/image1.svg" alt="Ashely Williams" />
+        <picture>
+          <source media="(width < 800px)" srcset="./image/image230x260.svg" />
+          <source media="(width >= 800px)" srcset="./image/image1.svg" />
+          <img
+            class="last_img"
+            src="./image/image1.svg"
+            alt="Ashely Williams"
+          />
+        </picture>
       </section>
     </main>
     <footer class="credits" id="credits">
       <h1 class="credits_text">Credits</h1>
       <p class="credits_text">
         Photos by
-        <a href="https://www.pexels.com/@krivitskiy/">Krivitskiy</a>from<a
-          href="https://www.pexels.com"
-          >pexels.com</a
-        >
+        <a href="https://www.pexels.com/@krivitskiy/">Krivitskiy </a>from
+        <a href="https://www.pexels.com">pexels.com</a>
       </p>
       <p class="credits_text">
         Projects image placeholder by
